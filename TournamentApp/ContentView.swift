@@ -9,13 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack{
+                MenuView(color : .red, label : "QR")
+                    .navigationTitle("Home Page")
+                    .offset(y:-60)
+                
+                NavigationLink("Go to QR", destination: ShowQRView())
+            }
         }
-        .padding()
+    }
+}
+
+struct MenuView: View {
+    
+    var color : Color
+    var label : String
+    
+    var body: some View {
+        ZStack {
+            Circle()
+                .frame(width: 200, height: 200)
+                .foregroundColor(color)
+            Text("\(label)")
+                .foregroundColor(.white)
+                .font(.system(size: 70, weight: .bold))
+        }
     }
 }
 
