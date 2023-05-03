@@ -12,7 +12,7 @@ struct ShowQRView: View {
     
     let context = CIContext()
     let filter = CIFilter.qrCodeGenerator()
-    var imageSeed = "String"
+    var imageSeed = "31C077C0-52CA-442A-985A-EBEC5DE78FDB"
     
     var body: some View {
         Image(uiImage: generateQRCodeImage(imageSeed)).interpolation(.none).resizable().frame(width:150, height: 150, alignment: .center)
