@@ -20,6 +20,11 @@
 		9F7EB5B429FDA0990052C9CD /* ManageTournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7EB5B329FDA0990052C9CD /* ManageTournamentView.swift */; };
 		9F7EB5B629FDA0AE0052C9CD /* ViewTournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7EB5B529FDA0AE0052C9CD /* ViewTournamentView.swift */; };
 		9F7EB5BA29FDAD260052C9CD /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7EB5B929FDAD260052C9CD /* CodeScanner */; };
+		9F7EB5BD29FDC2C60052C9CD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7EB5BC29FDC2C60052C9CD /* Realm */; };
+		9F7EB5BF29FDC2C60052C9CD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7EB5BE29FDC2C60052C9CD /* RealmSwift */; };
+		9F7EB5C129FDC8180052C9CD /* classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7EB5C029FDC8180052C9CD /* classes.swift */; };
+		9F7EB5C329FDCD6B0052C9CD /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7EB5C229FDCD6B0052C9CD /* Functions.swift */; };
+		9F7EB5C629FE1D2F0052C9CD /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7EB5C529FE1D2F0052C9CD /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,8 @@
 		9F7EB5B329FDA0990052C9CD /* ManageTournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTournamentView.swift; sourceTree = "<group>"; };
 		9F7EB5B529FDA0AE0052C9CD /* ViewTournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTournamentView.swift; sourceTree = "<group>"; };
 		9F7EB5B729FDAC6D0052C9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F7EB5C029FDC8180052C9CD /* classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classes.swift; sourceTree = "<group>"; };
+		9F7EB5C229FDCD6B0052C9CD /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7EB5C629FE1D2F0052C9CD /* Algorithms in Frameworks */,
+				9F7EB5BF29FDC2C60052C9CD /* RealmSwift in Frameworks */,
+				9F7EB5BD29FDC2C60052C9CD /* Realm in Frameworks */,
 				9F7EB5BA29FDAD260052C9CD /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,10 +119,12 @@
 			children = (
 				9F7EB5B729FDAC6D0052C9CD /* Info.plist */,
 				9F7EB5B529FDA0AE0052C9CD /* ViewTournamentView.swift */,
+				9F7EB5C029FDC8180052C9CD /* classes.swift */,
 				9F7EB5B329FDA0990052C9CD /* ManageTournamentView.swift */,
 				9F7EB5B129FDA07B0052C9CD /* ScanQRView.swift */,
 				9F7EB5AF29FDA06E0052C9CD /* ShowQRView.swift */,
 				9F7EB5AD29FDA0520052C9CD /* CreateTournamentView.swift */,
+				9F7EB5C229FDCD6B0052C9CD /* Functions.swift */,
 				9F7EB58129FD8BA50052C9CD /* TournamentAppApp.swift */,
 				9F7EB58329FD8BA50052C9CD /* ContentView.swift */,
 				9F7EB58529FD8BA70052C9CD /* Assets.xcassets */,
@@ -164,6 +176,9 @@
 			name = TournamentApp;
 			packageProductDependencies = (
 				9F7EB5B929FDAD260052C9CD /* CodeScanner */,
+				9F7EB5BC29FDC2C60052C9CD /* Realm */,
+				9F7EB5BE29FDC2C60052C9CD /* RealmSwift */,
+				9F7EB5C529FE1D2F0052C9CD /* Algorithms */,
 			);
 			productName = TournamentApp;
 			productReference = 9F7EB57E29FD8BA50052C9CD /* TournamentApp.app */;
@@ -239,6 +254,8 @@
 			mainGroup = 9F7EB57529FD8BA50052C9CD;
 			packageReferences = (
 				9F7EB5B829FDAD260052C9CD /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				9F7EB5BB29FDC2C60052C9CD /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				9F7EB5C429FE1D2F0052C9CD /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 9F7EB57F29FD8BA50052C9CD /* Products */;
 			projectDirPath = "";
@@ -284,10 +301,12 @@
 			files = (
 				9F7EB5B629FDA0AE0052C9CD /* ViewTournamentView.swift in Sources */,
 				9F7EB5B429FDA0990052C9CD /* ManageTournamentView.swift in Sources */,
+				9F7EB5C329FDCD6B0052C9CD /* Functions.swift in Sources */,
 				9F7EB5AE29FDA0520052C9CD /* CreateTournamentView.swift in Sources */,
 				9F7EB5B229FDA07B0052C9CD /* ScanQRView.swift in Sources */,
 				9F7EB58429FD8BA50052C9CD /* ContentView.swift in Sources */,
 				9F7EB5B029FDA06E0052C9CD /* ShowQRView.swift in Sources */,
+				9F7EB5C129FDC8180052C9CD /* classes.swift in Sources */,
 				9F7EB58229FD8BA50052C9CD /* TournamentAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +646,22 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		9F7EB5BB29FDC2C60052C9CD /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9F7EB5C429FE1D2F0052C9CD /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -634,6 +669,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F7EB5B829FDAD260052C9CD /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		9F7EB5BC29FDC2C60052C9CD /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7EB5BB29FDC2C60052C9CD /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		9F7EB5BE29FDC2C60052C9CD /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7EB5BB29FDC2C60052C9CD /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		9F7EB5C529FE1D2F0052C9CD /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7EB5C429FE1D2F0052C9CD /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

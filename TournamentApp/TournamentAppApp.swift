@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import RealmSwift
+
+let app = RealmSwift.App(id: "590tournament-pgarn")
 
 @main
-struct TournamentAppApp: App {
+struct TournamentAppApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
             ContentView()
