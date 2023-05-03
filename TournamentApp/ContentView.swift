@@ -38,6 +38,7 @@ struct ContentView: View {
             })
             
         }
+        .background(Color.purple)
     }
     
     var body: some View {
